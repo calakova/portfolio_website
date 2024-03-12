@@ -12,7 +12,100 @@
   <title>Portfolio - Christoph Wiesenhofer</title>
 </head>
 <body>
+  <header class="mb-3">
+    <nav class="navbar fixed-top navbar-expand navbar-dark bg-dark">
+      <div class="container-fluid d-flex justify-content-start">
+        <a class="navbar-brand" href="#">Home</a>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Links</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">GitHub Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Test</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container-fluid">
+      <div class="row mb-3">
+        <div class="col-sm-6">
+          <h1 class="mb-4">Christoph Wiesenhofer</h1>
+          <figure>
+            <img src="../img/Foto_Lebenslauf.png" alt="An image of me in a blue button-up" width="200px" class="rounded">
+          </figure>
+        </div>
+      </div>
+    
+      <div class="row mb-5">
+        <div class="col-sm-6 mb-4">
+          <section>
+            <h4 class="mb-4">Education</h4>
+            <h5>
+              Application Development
+              <small class="text-muted">Coders.Bay Kapfenberg</small>
+            </h5>
+            <p>Ongoing since June 2023</p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Backend Development in Java</li>
+              <li class="list-group-item">Web Development with HTML, CSS, Javascript & PHP</li>
+              <li class="list-group-item">Scripting in Linux and Windows</li>
+              <li class="list-group-item">Database Design with MySQL</li>
+            </ul>
+          </section>
+        </div>
+        <div class="col-sm-6 mb-4">
+          <section>
+            <h4 class="mb-4">Work Experience</h4>
+            <h5>
+              Post Office Employee
+              <small class="text-muted">Mail Boxes Etc.</small>
+            </h5>
+            <p>January 2020 - August 2020</p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Receiving, sending and preparing of letters and packages</li>
+              <li class="list-group-item">Printing and cutting of posters, business cards, etc.</li>
+              <li class="list-group-item">Data entry into Excel</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-sm-6 mb-4">
+          <section>
+            <h4 class="mb-4">Skills</h4>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Java: OOP, Maven, Unit Testing (JUnit, Mockito), Lombok, IntelliJ</li>
+              <li class="list-group-item">Web: HTML, CSS, Javascript, PHP</li>
+              <li class="list-group-item">Laragon, XAMPP, HeidiSQL, MariaDB, MySQL</li>
+              <li class="list-group-item">Git, Git-Bash, GitHub</li>
+              <li class="list-group-item">Windows, Linux</li>
+            </ul>
+          </section>
+        </div>
+        <div class="col-sm-6 mb-4">
+          <section>
+            <h4 class="mb-4">Languages</h4>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">German: First language</li>
+              <li class="list-group-item">English: very proficient</li>
+            </ul>
+          </section>
+        </div>
+      </div> 
+      <button class="btn btn-info" id="back-to-top-btn" title="Go to top" onclick="topFunction()">
+        <i class="fa-solid fa-angle-up"></i>
+      </button>  
+    </div>
+  </main>
   
   <script src="https://kit.fontawesome.com/2e6d5da9e9.js" crossorigin="anonymous"></script>
+  <script src="../js/script.js"></script>
 </body>
 </html>
