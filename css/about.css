@@ -2,6 +2,10 @@ main {
   padding-top: 70px;
 }
 
+.link {
+  text-decoration: none;
+}
+
 #back-to-top-btn {
   position: fixed;
   bottom: 40px;

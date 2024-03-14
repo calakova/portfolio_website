@@ -2,9 +2,20 @@ main {
   padding-top: 70px;
 }
 
+.link {
+  text-decoration: none;
+}
+
 #back-to-top-btn {
   position: fixed;
   bottom: 40px;
   right: 40px;
   display: none;
+}
+
+@media only screen and (min-width: 576px) {
+  #work-link, 
+  #languages-link {
+    display: none;
+  }
 }
