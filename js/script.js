@@ -1,3 +1,37 @@
+document.addEventListener('DOMContentLoaded', function() {
+  setDarkModeIfEnabled();
+});
+
+function switchColorMode() {
+  if (document.documentElement.getAttribute('data-bs-theme') == 'dark') {
+    localStorage.removeItem('dark');
+    document.documentElement.setAttribute('data-bs-theme', 'light');
+  } else {
+    localStorage.setItem('dark', true);
+    document.documentElement.setAttribute('data-bs-theme', 'dark');
+  }
+  toggleModeSwitchIcon();
+}
+
+function setDarkModeIfEnabled() {
+  if (localStorage.getItem('dark')) {
+    document.documentElement.setAttribute('data-bs-theme', 'dark');
+    toggleModeSwitchIcon();
+  }
+}
+
+function toggleModeSwitchIcon() {
+  let modeIcon = document.getElementById('modeIcon');
+  if (modeIcon.classList.contains('fa-moon')) {
+    modeIcon.classList.remove('fa-moon');
+    modeIcon.classList.add('fa-sun');
+  } else {
+    modeIcon.classList.remove('fa-sun');
+    modeIcon.classList.add('fa-moon');
+  }
+}
+
+
 /* Following code has been taken from 
 https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
 
@@ -19,12 +53,3 @@ function topFunction() {
 }
 
 // end of taken code
-
-
-function switchColorMode() {
-  if (document.documentElement.getAttribute('data-bs-theme') == 'dark') {
-    document.documentElement.setAttribute('data-bs-theme', 'light');
-  } else {
-    document.documentElement.setAttribute('data-bs-theme', 'dark');
-  }
-}
